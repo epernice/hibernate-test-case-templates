@@ -10,7 +10,10 @@
 	<properties>
 		<version.com.h2database>2.3.232</version.com.h2database>
 		<version.junit-jupiter>5.11.3</version.junit-jupiter>
-		<version.org.hibernate.orm>6.6.1.Final</version.org.hibernate.orm>
+
+		<!--<version.org.hibernate.orm>6.4.10.Final</version.org.hibernate.orm>--> <!--Pass-->
+		<!--<version.org.hibernate.orm>6.5.3.Final</version.org.hibernate.orm>-->  <!--Fail-->
+		<version.org.hibernate.orm>6.6.1.Final</version.org.hibernate.orm>         <!--Fail-->
 		<version.org.assertj.assertj-core>3.26.3</version.org.assertj.assertj-core>
 	</properties>
 
@@ -42,6 +45,11 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>${version.com.h2database}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc10</artifactId>
+			<version>19.20.0.0</version>
 		</dependency>
 
 		<dependency>
